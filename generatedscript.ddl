@@ -17,9 +17,9 @@ ALTER TABLE employees ADD CONSTRAINT employees_pk PRIMARY KEY ( emp_id );
 
 CREATE TABLE lands (
     land_id    NUMBER(2) NOT NULL,
-    area       NUMBER(10000, 2),
-    length     NUMBER(100, 2),
-    width      NUMBER(100, 2),
+    area       NUMBER(6, 2),
+    length     NUMBER(3, 2),
+    width      NUMBER(3, 2),
     owner_id   NUMBER(2) NOT NULL
 );
 

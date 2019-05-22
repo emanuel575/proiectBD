@@ -87,6 +87,8 @@ ALTER TABLE vehicles ADD CONSTRAINT vehicles_pk PRIMARY KEY ( vehicle_id );
 
 ALTER TABLE vehicles ADD CONSTRAINT vehicles_vehicle_id_un UNIQUE ( vehicle_id );
 
+ALTER TABLE vehicles ADD CONSTRAINT vehicles_status_ck CHECK (status in ("garage", "working", "service" ) );
+
 ALTER TABLE employees
     ADD CONSTRAINT employees_users_fk FOREIGN KEY ( users_user_id )
         REFERENCES users ( user_id );

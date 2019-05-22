@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0738E29A-F669-7D21-0DAA-ED377455ED54" name="veh_emp_FK">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vehicles_vehicle_id" id="D1E9D9E0-8CB4-258C-0CA3-72CEBB4C8754">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E76A90DB-CA3A-F028-6083-B58B5062F650" referredColumn="F887AD7D-8F96-0820-2AF0-183ADE0D4F4C"/>
+</associations>
+</Column>
+<Column name="employees_emp_id" id="91D38D7F-4240-E757-56A9-872057B89D9B">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BFB258AC-DF5F-A4F1-B9F3-9846BAA69FDE" referredColumn="65DB6717-5F68-2676-004B-0E0B3548CE45"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="EFD4A2BD-633D-181C-5E0F-EAD81286E2E5" name="veh_emp_FK_PK">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1E9D9E0-8CB4-258C-0CA3-72CEBB4C8754"/>
+<colUsage columnID="91D38D7F-4240-E757-56A9-872057B89D9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7906CFE8-4167-DC55-F72C-511FD7C97115" name="veh_emp_FK_vehicles_FK">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>1097B9F7-5A1D-0C70-54E7-FCEBC54C149F</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D1E9D9E0-8CB4-258C-0CA3-72CEBB4C8754"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AC428FBB-0C9E-C95B-18D2-8FA5CC9ACA4E" name="veh_emp_FK_employees_FK">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>1097B9F7-5A1D-0C70-54E7-FCEBC54C149F</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="91D38D7F-4240-E757-56A9-872057B89D9B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

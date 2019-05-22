@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="EB64A480-8587-686C-028D-FD8F9A4F3098" name="vehicles">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:43:10 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="vehicle_id" id="3ECBC437-DD49-BF38-E766-7515DABB2F54">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:43:18 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="status" id="2CD4C621-6151-01DE-5D97-445598592492">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:43:29 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="vehicle_type" id="96DEBF00-380F-69A4-AF7D-CBDFB869F2AF">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:43:52 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_id" id="BB17B355-6E1D-11F2-3B18-7882979213F5">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:55:34 UTC</createdTime>
+<generatorID>EF3FB2CD-D4E4-CB68-277D-631E2BDF4879</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<referedAttribute>4DF2DDA8-D238-98B6-669C-5FC5ABBB4D77</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="81358B56-3495-2BC1-584A-376A4666424F" name="vehicles PK">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:43:26 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3ECBC437-DD49-BF38-E766-7515DABB2F54</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="220102C8-484C-B5B5-65FA-181FBDADD9DC" name="vehicle_id_UK">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:50:55 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<newElementsIDs>3ECBC437-DD49-BF38-E766-7515DABB2F54</newElementsIDs>
+<usedAttributes>
+<attributeRef>3ECBC437-DD49-BF38-E766-7515DABB2F54</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

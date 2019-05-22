@@ -1,0 +1,113 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A2988B87-4367-EB04-3066-6F563CC8DD2F" name="terrains">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:40:46 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="terrain_id" id="7047B315-225D-CB84-5B8C-CEF233278212">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:40:53 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="area" id="A3499493-9063-2C16-532F-5075DA49A8CE">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:41:11 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<ownDataTypeParameters>,6,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="width" id="FA0FD1B4-3040-C2B2-9C04-1A49DF276C1D">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:42:05 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="tlength" id="93D571C7-4ABD-70C3-5047-8ED4F33BDABC">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:42:29 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="user_id" id="EEEBD008-195D-7EC2-F0D7-0F43D203ED07">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:55:15 UTC</createdTime>
+<generatorID>39B24B74-B573-1302-B0F1-75DC8C28D96D</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<referedAttribute>4DF2DDA8-D238-98B6-669C-5FC5ABBB4D77</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="46B00520-8C1C-A79E-DC0A-EC236DE02F80" name="terrains PK">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:41:08 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>7047B315-225D-CB84-5B8C-CEF233278212</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0E0F3105-9737-DA42-EBAA-25E045F75293" name="terrains_id_UK">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:51:21 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<engineerTo>
+<item key="2C14649E-96AD-7F21-7857-CF88943C1985" value="true"/>
+</engineerTo>
+<newElementsIDs>7047B315-225D-CB84-5B8C-CEF233278212</newElementsIDs>
+<usedAttributes>
+<attributeRef>7047B315-225D-CB84-5B8C-CEF233278212</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

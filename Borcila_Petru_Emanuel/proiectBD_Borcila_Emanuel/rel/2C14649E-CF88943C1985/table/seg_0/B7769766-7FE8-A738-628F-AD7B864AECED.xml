@@ -1,0 +1,89 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B7769766-7FE8-A738-628F-AD7B864AECED" name="users_details">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>38646A9E-FE4B-C6BE-98E0-07A14B30BFFD</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="first_name" id="6AEA2A38-F106-01C6-3760-C1E3A9D1F964">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>DEFDC974-1DB2-A387-19B3-7F994117DC36</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="last_name" id="C31EE114-0653-F49D-BAF6-01243E7B9076">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>D881EDE2-F889-8BB2-65F1-BD08FFBDB4B7</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone" id="E41EFA9C-4314-C8BB-8AA1-A6D71C6CB5B1">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>995BE207-817B-B2AE-9AF0-C5F06A2423FF</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="users_user_id" id="D113FD18-F37B-D0FF-91D6-42A044CE5708">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>64307F13-5EAC-ABA8-CAAE-26231B5807B7</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="7B726EBE-B664-5594-5BB5-59C2EB32C1A9" referredColumn="1C66E30E-B5AB-DE7B-EB56-A8A7AFEEEB34"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7EB46194-2A7F-B6B2-43E5-DE008D5F121B" name="users_details__IDX">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>DF1D18A2-5884-1585-74E9-5CAF088B5E02</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D113FD18-F37B-D0FF-91D6-42A044CE5708"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D26A5D02-2B97-5EA8-7D00-031FC524AC70" name="users_details_users_FK">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>DF1D18A2-5884-1585-74E9-5CAF088B5E02</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D113FD18-F37B-D0FF-91D6-42A044CE5708"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

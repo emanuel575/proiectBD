@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F634A280-EAC9-4A02-8394-2AFEF442195F" name="vehicles">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>EB64A480-8587-686C-028D-FD8F9A4F3098</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="vehicle_id" id="F887AD7D-8F96-0820-2AF0-183ADE0D4F4C">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>3ECBC437-DD49-BF38-E766-7515DABB2F54</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="status" id="D30549F0-905D-6B28-5EC8-5057FAEBBDF2">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>2CD4C621-6151-01DE-5D97-445598592492</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="vehicle_type" id="418FF868-0255-51DC-B511-5A5F4B60DB89">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>96DEBF00-380F-69A4-AF7D-CBDFB869F2AF</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255</dataTypeSize>
+<ownDataTypeParameters>255,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="users_user_id" id="83D7D438-25F0-7F86-F0E9-538373BF9A78">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>BB17B355-6E1D-11F2-3B18-7882979213F5</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="0DE3268C-0D5A-3E2A-746F-2FEFE49A98E9" referredColumn="1C66E30E-B5AB-DE7B-EB56-A8A7AFEEEB34"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1616CAF-37EE-4B87-3659-B3698C45F90F" name="vehicles_PK">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>81358B56-3495-2BC1-584A-376A4666424F</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F887AD7D-8F96-0820-2AF0-183ADE0D4F4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="A335F9F3-F0CC-538A-763C-CB1060AE4A19" name="vehicles_vehicle_id_UN">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>220102C8-484C-B5B5-65FA-181FBDADD9DC</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F887AD7D-8F96-0820-2AF0-183ADE0D4F4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="70ADFD40-81FC-CB0E-6F4F-0AB537FACB6D" name="vehicles_users_FK">
+<createdBy>emanuel</createdBy>
+<createdTime>2019-05-22 15:56:37 UTC</createdTime>
+<generatorID>EF3FB2CD-D4E4-CB68-277D-631E2BDF4879</generatorID>
+<ownerDesignName>proiectBD</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="83D7D438-25F0-7F86-F0E9-538373BF9A78"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

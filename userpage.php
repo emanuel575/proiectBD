@@ -105,6 +105,9 @@ oci_free_statement($sql);
     <form action="" method="post">
         <input type="submit" class="btn btn-danger" name="reset_pwd" value="Reset Password" />
     </form>
+    <form action="" method="post">
+        <input type="submit" class="btn btn-danger" name="delete_acc" value="Delete Account" />
+    </form>
 </div>
 
 <?php
@@ -112,5 +115,10 @@ oci_free_statement($sql);
 if( isset($_POST['reset_pwd']))
 {
     header('Location: resetpass.php');
+}
+
+if( isset($_POST['delete_acc']))
+{
+   header('Location: deleteacc.php');
 }
 ?>

@@ -14,15 +14,6 @@ $varib = true;
             <legend class="">Register</legend>
         </div>
         <div class="control-group">
-            <!-- Username -->
-            <label class="control-label"  for="username">Username</label>
-            <div class="controls">
-                <input type="text" id="username" name="username" placeholder="" class="input-xlarge">
-                <p class="help-block">Username can contain any letters or numbers, without spaces</p>
-            </div>
-        </div>
-
-        <div class="control-group">
             <!-- E-mail -->
             <label class="control-label" for="email">E-mail</label>
             <div class="controls">
@@ -109,36 +100,60 @@ $varib = true;
 
 <?php
 
-
-$db = mysqli_connect("remotemysql.com", "mvxI3opY2H", "QSSr33vZ0U", "mvxI3opY2H");
-
-if ($db->connect_error){
-    echo "Error: Unable to connect to MySQL." . PHP_EOL;
-    echo "Debugging errno: " . mysqli_connect_errno() . PHP_EOL;
-    echo "Debugging error: " . mysqli_connect_error() . PHP_EOL;
-    exit;
+    $db = oci_connect('emanuel', 'emanuel', 'localhost/XE');
+if (!$db) {
+    $e = oci_error();
+    trigger_error(htmlentities($e['message'], ENT_QUOTES), E_USER_ERROR);
 }
 
 if(isset($_POST['submit']))
 {
     if($varib == true)
     {
-        $usr = $_POST['username'];
         $pwd = $_POST['password'];
-        $pwd_confirm = $_POST['password_confirm'];
         $email = $_POST['email'];
         $first_name = $_POST['first_name'];
         $last_name = $_POST['last_name'];
         $phone = $_POST['phone'];
-        $sql = "INSERT INTO users (user_id, email, pass) VALUES ($z,'$email', '$pwd')";
 
-        if( mysqli_query($db, $sql) == true)
+
+        $query_users = "INSERT INTO users (email, pwd) VALUES (:email, :pwd)";
+
+        $query_userD = "INSERT INTO users_details (first_name, last_name, phone, users_user_id) VALUES (:first_name, :last_name, :phone,
+(SELECT user_id from users WHERE email = :email)
+)";
+
+        $sql = oci_parse($db, $query_users);
+
+        oci_bind_by_name($sql, ':email',$email);
+        oci_bind_by_name($sql, ':pwd',$pwd);
+
+        if( oci_execute($sql) )
         {
-            echo "User inserted successfully";
+            echo "users inserted succesfully";
         }
         else
         {
             echo "User was not succesfully inserted";
+        }
+
+        $sql = oci_parse($db, $query_userD);
+
+        oci_bind_by_name($sql, ':email',$email);
+        oci_bind_by_name($sql, ':first_name',$first_name);
+        oci_bind_by_name($sql, ':last_name',$last_name);
+        oci_bind_by_name($sql, ':phone',$phone);
+
+        if(oci_execute($sql))
+        {
+            echo "users details inserted succesfully\n";
+            echo "Page will be reloaded in 10 seconds";
+            sleep(10);
+            header("Refresh: 0");
+        }
+        else
+        {
+            echo "users details have and error";
         }
     }
 }

@@ -74,7 +74,6 @@ if (isset($_POST['yes_btn'])) {
                      DELETE FROM terrains WHERE users_user_id = :usr_id;
                      DELETE FROM vehicles WHERE users_user_id = :usr_id;
                      DELETE FROM employees WHERE users_user_id = :usr_id;
-
                      END;"
                     ;
 

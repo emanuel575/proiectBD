@@ -157,7 +157,85 @@ BEGIN
 END;
 /
 
+insert into users (email, pwd) values ('dgiannassi0@wp.com', 'KLxDynxM3');
+insert into users (email, pwd) values ('holkowicz1@va.gov', 'x6HLg3WUQYP8');
+insert into users (email, pwd) values ('asparshutt2@phpbb.com', 'GppHygby');
+insert into users (email, pwd) values ('vrenner3@4shared.com', 'Du7r18IrTy');
+insert into users (email, pwd) values ('eiwaszkiewicz4@xing.com', 'KAAWkWQ5OWS5');
 
+insert into users_details (first_name, last_name, phone, users_user_id) values ('Kingsly', 'McAmish', '2396174751',
+                                                                                (SELECT user_id from users WHERE email='dgiannassi0@wp.com')
+                                                                               );
+
+insert into users_details (first_name, last_name, phone, users_user_id) values ('Maureen', 'Tyreman', '5089876224',
+                                                                                (SELECT user_id from users WHERE email='holkowicz1@va.gov')
+                                                                               );
+
+insert into users_details (first_name, last_name, phone, users_user_id) values ('Lexis', 'Cheke', '2303302008',
+                                                                                (SELECT user_id from users WHERE email='asparshutt2@phpbb.com')
+                                                                               );
+insert into users_details (first_name, last_name, phone, users_user_id) values ('Alejandra', 'Burrow', '4946401885',
+                                                                                (SELECT user_id from users WHERE email='vrenner3@4shared.com')
+
+                                                                               );
+insert into users_details (first_name, last_name, phone, users_user_id) values ('Brittani', 'Walch', '6003736607',
+                                                                                (SELECT user_id from users WHERE email='eiwaszkiewicz4@xing.com')
+                                                                               );
+
+insert into vehicles (status, vehicle_type, users_user_id) values ('garage', 'tractor',
+                                                                   (SELECT user_id from users WHERE email='dgiannassi0@wp.com')
+                                                                  );
+
+insert into vehicles (status, vehicle_type, users_user_id) values ('garage', 'tractor',
+                                                                   (SELECT user_id from users WHERE email='holkowicz1@va.gov')
+                                                                  );
+
+insert into vehicles (status, vehicle_type, users_user_id) values ('garage', 'tractor',
+                                                                   (SELECT user_id from users WHERE email='asparshutt2@phpbb.com')
+                                                                  );
+
+insert into vehicles (status, vehicle_type, users_user_id) values ('garage', 'tractor',
+                                                                   (SELECT user_id from users WHERE email='vrenner3@4shared.com')
+                                                                  );
+
+insert into vehicles (status, vehicle_type, users_user_id) values ('garage', 'tractor',
+                                                                   (SELECT user_id from users WHERE email='eiwaszkiewicz4@xing.com')
+                                                                  );
+
+insert into terrains (width, tlength, area, users_user_id) values (464, 531, (width*tlength),
+                                                                   (SELECT user_id from users WHERE email='dgiannassi0@wp.com')
+                                                                  );
+
+insert into terrains (width, tlength, area, users_user_id) values (102, 224, (102*224),
+                                                                   (SELECT user_id from users WHERE email='holkowicz1@va.gov')
+                                                                  );
+
+insert into terrains (width, tlength, area, users_user_id) values (430, 574, (430*574),
+                                                                   (SELECT user_id from users WHERE email='asparshutt2@phpbb.com')
+                                                                  );
+
+insert into terrains (width, tlength, area, users_user_id) values (793, 866, (793*866),
+                                                                   (SELECT user_id from users WHERE email='vrenner3@4shared.com')
+                                                                  );
+
+insert into terrains (width, tlength, area, users_user_id) values (884, 349, (884*349),
+                                                                   (SELECT user_id from users WHERE email='eiwaszkiewicz4@xing.com')
+                                                                  );
+insert into employees (name, salary, users_user_id) values ('Burr Emerson',     734,
+                                                            (SELECT user_id from users WHERE email='dgiannassi0@wp.com')
+                                                           );
+insert into employees (name, salary, users_user_id) values ('Marc Ranking',     755,
+                                                            (SELECT user_id from users WHERE email='holkowicz1@va.gov')
+                                                           );
+insert into employees (name, salary, users_user_id) values ('Gwenneth Pecht',   739,
+                                                            (SELECT user_id from users WHERE email='asparshutt2@phpbb.com')
+                                                           );
+insert into employees (name, salary, users_user_id) values ('Roseanne Sheppard',622,
+                                                            (SELECT user_id from users WHERE email='vrenner3@4shared.com')
+                                                           );
+insert into employees (name, salary, users_user_id) values ('Jessa Bexley',     536,
+                                                            (SELECT user_id from users WHERE email='eiwaszkiewicz4@xing.com')
+                                                           );
 
 -- Oracle SQL Developer Data Modeler Summary Report: 
 -- 

@@ -77,6 +77,8 @@
 
 <?php
 
+session_start();
+
 $db = oci_connect('emanuel', 'emanuel', 'localhost/XE');
 if (!$db) {
     $e = oci_error();
@@ -85,7 +87,6 @@ if (!$db) {
 
 if (isset($_POST['loginB'])) {
 
-    echo "salut iuliaan";
     $pwd = $_POST['password_login'];
     $email = $_POST['email_login'];
 
@@ -97,19 +98,23 @@ if (isset($_POST['loginB'])) {
     oci_bind_by_name($sql, ':pwd', $pwd);
 
     if (oci_execute($sql)) {
-        echo "o mers";
-        while (($row = oci_fetch_array($sql, OCI_BOTH)) != false) {
-            // Use the uppercase column names for the associative array indices
-            echo $row[0] . " and " . $row['USER_ID']   . " are the same<br>\n";
-            echo $row[1] . " and " . $row['EMAIL'] . " are the same<br>\n";
+        echo "amu nu mai mergi ?";
+        $row = oci_fetch_array($sql,OCI_ASSOC);
+        if($row)
+        {
+            echo 'Login successfully';
+            $_SESSION['user'] = $row['USER_ID'];
+            header('Location: userpage.php');
         }
-    } else {
+    }
+    else
+    {
         echo "failed ceva";
     }
     oci_free_statement($sql);
     oci_close($db);
-    echo "Page will be reloaded in 5 seconds";
-    header("Refresh: 5");
+//    echo "Page will be reloaded in 5 seconds";
+//    header("Refresh: 5");
 }
 
 ?>

@@ -52,12 +52,17 @@ ALTER TABLE users ADD CONSTRAINT users_user_id_un UNIQUE ( user_id );
 
 ALTER TABLE users ADD CONSTRAINT users_email_un UNIQUE ( email );
 
+ALTER TABLE users ADD CONSTRAINT users_pwd_ck CHECK (LENGTH(pwd) > 6 );
+
 CREATE TABLE users_details (
                                first_name      VARCHAR2(255) NOT NULL,
                                last_name       VARCHAR2(255) NOT NULL,
                                phone           VARCHAR2(10),
                                users_user_id   NUMBER(3) NOT NULL
 );
+
+ALTER TABLE users_details ADD CONSTRAINT users_pwd_ck CHECK (LENGTH(phone) = 6 );
+
 
 CREATE UNIQUE INDEX users_details__idx ON
     users_details (
@@ -82,6 +87,12 @@ CREATE TABLE vehicles (
 ALTER TABLE vehicles ADD CONSTRAINT vehicles_pk PRIMARY KEY ( vehicle_id );
 
 ALTER TABLE vehicles ADD CONSTRAINT vehicles_vehicle_id_un UNIQUE ( vehicle_id );
+
+ALTER TABLE vehicles ADD CONSTRAINT veh_stat_ck CHECK (status IN (
+                                                                  'broken',
+                                                                  'garage',
+                                                                  'working'
+    ));
 
 ALTER TABLE employees
     ADD CONSTRAINT employees_users_fk FOREIGN KEY ( users_user_id )

@@ -110,7 +110,6 @@ $varib = true;
                 ?>
             </div>
         </div>
-
         <div class="control-group">
             <!-- Button -->
             <div class="controls">

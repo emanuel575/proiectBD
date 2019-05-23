@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="643bdc98-14b0-4a0a-83d5-91404ede8ad8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl" beforeDir="false" afterPath="$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,20 +26,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="199">
-              <caret line="139" column="44" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
+            <state relative-caret-position="488">
+              <caret line="155" column="36" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="579">
-              <caret line="280" selection-start-line="280" selection-end-line="280" />
+            <state relative-caret-position="17">
+              <caret line="212" column="68" lean-forward="true" selection-start-line="212" selection-start-column="68" selection-end-line="212" selection-end-column="68" />
             </state>
           </provider>
         </entry>
@@ -60,8 +60,8 @@
         <option value="$PROJECT_DIR$/Views/Home.php" />
         <option value="$PROJECT_DIR$/generatedscript.ddl" />
         <option value="$PROJECT_DIR$/sqlGeneratedScript.sql" />
-        <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl" />
+        <option value="$PROJECT_DIR$/register.php" />
       </list>
     </option>
   </component>
@@ -133,12 +133,12 @@
       <workItem from="1558021771428" duration="1061000" />
       <workItem from="1558029233977" duration="924000" />
       <workItem from="1558556801526" duration="2893000" />
-      <workItem from="1558609421910" duration="5766000" />
+      <workItem from="1558609421910" duration="6140000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10644000" />
+    <option name="totallyTimeSpent" value="11018000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -178,17 +178,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
+    <entry file="file://$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="139" column="44" selection-start-line="139" selection-start-column="44" selection-end-line="139" selection-end-column="44" />
+        <state relative-caret-position="17">
+          <caret line="212" column="68" lean-forward="true" selection-start-line="212" selection-start-column="68" selection-end-line="212" selection-end-column="68" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl">
+    <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="579">
-          <caret line="280" selection-start-line="280" selection-end-line="280" />
+        <state relative-caret-position="488">
+          <caret line="155" column="36" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
         </state>
       </provider>
     </entry>

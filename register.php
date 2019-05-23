@@ -147,15 +147,14 @@ if(isset($_POST['submit']))
         if(oci_execute($sql))
         {
             echo "users details inserted succesfully\n";
-            echo "Page will be reloaded in 10 seconds";
-            sleep(10);
-            header("Refresh: 0");
         }
         else
         {
             echo "users details have and error";
         }
     }
+    echo "Page will be reloaded in 5 seconds";
+    header("Refresh: 5");
 }
 
 ?>

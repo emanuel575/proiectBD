@@ -82,8 +82,7 @@ oci_free_statement($sql);
 global $check;
 $check = true;
 
-if(isset($_POST['confirm']))
-{
+if(isset($_POST['confirm'])) {
     $usr_id = $_SESSION['user'];
 
     $db = oci_connect('emanuel', 'emanuel', 'localhost/XE');
@@ -94,28 +93,43 @@ if(isset($_POST['confirm']))
 
     $query_get_pwd = "SELECT pwd FROM users WHERE (user_id = :usr_id)";
 
-    $sql = oci_parse($db, $query_login);
+    $sql = oci_parse($db, $query_get_pwd);
 
     oci_bind_by_name($sql, ':usr_id', $usr_id);
 
     $current_pwd = 0;
     if (oci_execute($sql)) {
-        $row = oci_fetch_array($sql,OCI_ASSOC);
-        if($row)
-        {
+        $row = oci_fetch_array($sql, OCI_ASSOC);
+        if ($row) {
             $current_pwd = $row['PWD'];
         }
     }
-
-    if($check)
-    {
-        $new_pwd = $_POST['new_pwd'];
-        $conf_new_pwd = $_POST['conf_new_pwd'];
-
-        $query_for_update = "ALTER USER :usr_id IDENTIFIED by "
-    }
-
     oci_free_statement($sql);
+
+    if ($check) {
+        if ($current_pwd == $_POST['current_pwd']) {
+
+            $new_pwd = $_POST['new_pwd'];
+            $conf_new_pwd = $_POST['conf_new_pwd'];
+
+            $query_for_update = "UPDATE users SET pwd = :new_pwd WHERE user_id = :usr_id ";
+
+            $sql = oci_parse($db, $query_for_update);
+
+            oci_bind_by_name($sql, ':usr_id', $usr_id);
+            oci_bind_by_name($sql, ':new_pwd', $new_pwd);
+
+            if (oci_execute($sql)) {
+                echo "<br> Password reseted succesfully</br>";
+                header('Location: userpage.php');
+            }
+            oci_free_statement($sql);
+        }
+        else
+        {
+            echo "<div class=\"alert alert-danger\" role=\"alert\"> Wrong password </div>";
+        }
+    }
 }
 
 ?>

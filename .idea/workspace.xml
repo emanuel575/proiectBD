@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="643bdc98-14b0-4a0a-83d5-91404ede8ad8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resetpass.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/userpage.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/proiectBD.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/proiectBD.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl" beforeDir="false" afterPath="$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resetpass.php" beforeDir="false" afterPath="$PROJECT_DIR$/resetpass.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,16 +47,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/resetpass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="607">
-              <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
+            <state relative-caret-position="471">
+              <caret line="129" column="91" selection-start-line="129" selection-start-column="91" selection-end-line="129" selection-end-column="91" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="221">
@@ -97,8 +90,8 @@
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/register.php" />
         <option value="$PROJECT_DIR$/userpage.php" />
-        <option value="$PROJECT_DIR$/resetpass.php" />
         <option value="$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl" />
+        <option value="$PROJECT_DIR$/resetpass.php" />
       </list>
     </option>
   </component>
@@ -172,12 +165,12 @@
       <workItem from="1558029233977" duration="924000" />
       <workItem from="1558556801526" duration="2893000" />
       <workItem from="1558609421910" duration="10107000" />
-      <workItem from="1558643537764" duration="7427000" />
+      <workItem from="1558643537764" duration="8229000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22412000" />
+    <option name="totallyTimeSpent" value="23214000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -241,17 +234,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resetpass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="114" column="40" selection-start-line="114" selection-start-column="40" selection-end-line="114" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="64" selection-start-line="64" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resetpass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="471">
+          <caret line="129" column="91" selection-start-line="129" selection-start-column="91" selection-end-line="129" selection-end-column="91" />
         </state>
       </provider>
     </entry>

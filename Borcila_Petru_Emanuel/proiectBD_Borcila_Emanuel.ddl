@@ -143,7 +143,7 @@ BEGIN
 END;
 /
 
-CREATE SEQUENCE vehicles_vehicle_id_seq;
+DROP SEQUENCE vehicles_vehicle_id_seq;
 CREATE SEQUENCE vehicles_vehicle_id_seq START WITH 1 NOCACHE ORDER;
 
 CREATE OR REPLACE TRIGGER vehicles_vehicle_id_trg BEFORE

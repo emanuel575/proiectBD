@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="643bdc98-14b0-4a0a-83d5-91404ede8ad8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl" beforeDir="false" afterPath="$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/register.php" beforeDir="false" afterPath="$PROJECT_DIR$/register.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -18,28 +21,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Home.php">
+        <entry file="file://$PROJECT_DIR$/register.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="7" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="7" />
+            <state relative-caret-position="34">
+              <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/register.php">
+        <entry file="file://$PROJECT_DIR$/login.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="488">
-              <caret line="155" column="36" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="212" column="68" lean-forward="true" selection-start-line="212" selection-start-column="68" selection-end-line="212" selection-end-column="68" />
+            <state relative-caret-position="338">
+              <caret line="103" column="38" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
             </state>
           </provider>
         </entry>
@@ -47,6 +41,11 @@
     </leaf>
   </component>
   <component name="FindInProjectRecents">
+    <findStrings>
+      <find>LAravel</find>
+      <find>Laravel</find>
+      <find>Register</find>
+    </findStrings>
     <dirStrings>
       <dir>$PROJECT_DIR$</dir>
     </dirStrings>
@@ -61,6 +60,7 @@
         <option value="$PROJECT_DIR$/generatedscript.ddl" />
         <option value="$PROJECT_DIR$/sqlGeneratedScript.sql" />
         <option value="$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl" />
+        <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/register.php" />
       </list>
     </option>
@@ -88,6 +88,12 @@
               <item name="proiectBD" type="b2602c69:ProjectViewProjectNode" />
               <item name="proiectBD" type="462c0819:PsiDirectoryNode" />
               <item name="Borcila_Petru_Emanuel" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="proiectBD" type="b2602c69:ProjectViewProjectNode" />
+              <item name="proiectBD" type="462c0819:PsiDirectoryNode" />
+              <item name="Borcila_Petru_Emanuel" type="462c0819:PsiDirectoryNode" />
+              <item name="proiectBD_Borcila_Emanuel" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -133,18 +139,18 @@
       <workItem from="1558021771428" duration="1061000" />
       <workItem from="1558029233977" duration="924000" />
       <workItem from="1558556801526" duration="2893000" />
-      <workItem from="1558609421910" duration="6140000" />
+      <workItem from="1558609421910" duration="10107000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11018000" />
+    <option name="totallyTimeSpent" value="14985000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.48926175" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20939597" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -171,6 +177,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/generatedscript.ddl" />
     <entry file="file://$PROJECT_DIR$/sqlGeneratedScript.sql" />
+    <entry file="file://$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1326">
+          <caret line="145" column="4" selection-start-line="145" selection-start-column="4" selection-end-line="145" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Home.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -178,17 +191,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Borcila_Petru_Emanuel/proiectBD_Borcila_Emanuel.ddl">
+    <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="212" column="68" lean-forward="true" selection-start-line="212" selection-start-column="68" selection-end-line="212" selection-end-column="68" />
+        <state relative-caret-position="34">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
+    <entry file="file://$PROJECT_DIR$/login.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="488">
-          <caret line="155" column="36" selection-start-line="155" selection-start-column="36" selection-end-line="155" selection-end-column="36" />
+        <state relative-caret-position="338">
+          <caret line="103" column="38" selection-start-line="103" selection-start-column="38" selection-end-line="103" selection-end-column="38" />
         </state>
       </provider>
     </entry>
